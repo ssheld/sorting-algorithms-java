@@ -4,7 +4,7 @@ import static com.ssheld.SortingAlgorithms.SortHelper.*;
 /**
  * Author: Stephen Sheldon 3/3/2019
  *
- * Insertion Sort Algorithm
+ * Insertion Sort
  * Time Complexity: O(n^2)
  */
 

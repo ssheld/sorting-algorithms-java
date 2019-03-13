@@ -4,6 +4,7 @@ import com.ssheld.SortingAlgorithms.InsertionSort;
 import com.ssheld.SortingAlgorithms.BubbleSort;
 import com.ssheld.SortingAlgorithms.SelectionSort;
 import com.ssheld.SortingAlgorithms.SortHelper;
+import com.ssheld.SortingAlgorithms.QuickSort;
 
 import java.util.Scanner;
 
@@ -56,7 +57,7 @@ public class SortingMachine {
             System.out.println("2. Bubble Sort");
             System.out.println("3. Selection Sort");
             System.out.println("4. Merge Sort");
-            System.out.println("5. Insertion Sort");
+            System.out.println("5. Quick Sort");
 
             sortChoice = scan.nextInt();
 
@@ -69,6 +70,8 @@ public class SortingMachine {
                     BubbleSort.sort(numbers);
                 else if (sortChoice == 3)
                     SelectionSort.sort(numbers);
+                else if (sortChoice == 5)
+                    QuickSort.sort(numbers, 0, numbers.length-1);
 
                 System.out.println("After sorting..");
                 SortHelper.printArray(numbers);
@@ -82,6 +85,8 @@ public class SortingMachine {
                     BubbleSort.sort(names);
                 else if (sortChoice == 3)
                     SelectionSort.sort(names);
+                else if (sortChoice == 5)
+                    QuickSort.sort(names, 0, names.length-1);
 
                 System.out.println("After sorting..");
                 SortHelper.printArray(names);

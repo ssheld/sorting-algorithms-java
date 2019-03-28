@@ -1,10 +1,6 @@
 package com;
 
-import com.ssheld.SortingAlgorithms.InsertionSort;
-import com.ssheld.SortingAlgorithms.BubbleSort;
-import com.ssheld.SortingAlgorithms.SelectionSort;
-import com.ssheld.SortingAlgorithms.SortHelper;
-import com.ssheld.SortingAlgorithms.QuickSort;
+import com.ssheld.SortingAlgorithms.*;
 
 import java.util.Scanner;
 
@@ -70,6 +66,8 @@ public class SortingMachine {
                     BubbleSort.sort(numbers);
                 else if (sortChoice == 3)
                     SelectionSort.sort(numbers);
+                else if (sortChoice == 4)
+                    MergeSort.sort(numbers);
                 else if (sortChoice == 5)
                     QuickSort.sort(numbers, 0, numbers.length-1);
 
@@ -85,6 +83,8 @@ public class SortingMachine {
                     BubbleSort.sort(names);
                 else if (sortChoice == 3)
                     SelectionSort.sort(names);
+                else if (sortChoice == 4)
+                    MergeSort.sort(names);
                 else if (sortChoice == 5)
                     QuickSort.sort(names, 0, names.length-1);
 

@@ -50,7 +50,7 @@ public class QuickSort {
                 break;
             swap(arr, i, j);
         }
-        
+
         swap(arr, i, hi);
 
         return i;

@@ -18,7 +18,7 @@ public class SortingUtils {
     }
 
     // Checks to see if array is sorted
-    protected static boolean isSorted(Comparable[] arr) {
+    public static boolean isSorted(Comparable[] arr) {
         for (int i = 1; i < arr.length; i++) {
             if (less(arr[i], arr[i-1])) {
                 return false;

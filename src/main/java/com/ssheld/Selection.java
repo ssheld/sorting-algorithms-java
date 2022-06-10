@@ -6,7 +6,7 @@ public class Selection {
         for (int i = 0; i < arr.length; i++) {
             int min = i;
             for (int j = i + 1; j < arr.length; j++) {
-                if (SortingUtils.less(arr[j], arr[i])) {
+                if (SortingUtils.less(arr[j], arr[min])) {
                     min = j;
                 }
             }

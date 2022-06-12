@@ -4,7 +4,7 @@ public class SortingUtils {
 
     // Method to compare two Comparable objects
     protected static boolean less(Comparable v, Comparable w) {
-        if (v.compareTo(w) <= 0) {
+        if (v.compareTo(w) < 0) {
             return true;
         }
         return false;

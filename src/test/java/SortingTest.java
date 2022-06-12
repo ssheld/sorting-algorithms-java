@@ -1,4 +1,5 @@
 import com.ssheld.Insertion;
+import com.ssheld.Merge;
 import com.ssheld.Selection;
 import com.ssheld.SortingUtils;
 import org.junit.jupiter.api.BeforeEach;
@@ -29,6 +30,13 @@ public class SortingTest {
     @Test
     void insertionSort() {
         Insertion.sort(arr);
+        assertEquals(true, SortingUtils.isSorted(arr));
+    }
+
+    // Mergesort test
+    @Test
+    void mergesort() {
+        Merge.sort(arr);
         assertEquals(true, SortingUtils.isSorted(arr));
     }
 }
